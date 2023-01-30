@@ -8,14 +8,14 @@ const Orelso = {
 
 //* Dot Notation
 console.log(Orelso)
-console.log(Orelso.firstName) //! Bo
-console.log(Orelso.lastName) //! Vitam
-console.log(Orelso.age) //! 31
-console.log(Orelso.friends[2]) //! p
+console.log(Orelso.firstName) //* Bo
+console.log(Orelso.lastName) //* Vitam
+console.log(Orelso.age) //* 31
+console.log(Orelso.friends[2]) //* p
 
 //* Bracket Notation
 const nameKey = 'Name'
-console.log(Orelso["last" + nameKey]); //! Vitam
+console.log(Orelso["last" + nameKey]); //* Vitam
 
 //* Print to UI
 for (const property in Orelso) {
@@ -32,3 +32,5 @@ console.log(Orelso[interestedIn])
 Orelso.location = " Finland";
 Orelso['twitter'] = '@orelso';
 console.log(Orelso)
+
+export default Orelso;
