@@ -1,10 +1,10 @@
 import './App.css';
-import Orelso from './JS101/Dot-BracketNotation';
+import orelsoArray from './JS101/ForLoop';
 
 function App() {
   return (
     <div className="App">
-    <Orelso />
+    <orelsoArray />
     </div>
   );
 }

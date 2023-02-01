@@ -33,4 +33,20 @@ Orelso.location = " Finland";
 Orelso['twitter'] = '@orelso';
 console.log(Orelso)
 
+const orelsoArray = [
+    'Bo',
+    'Vitam',
+    31,
+    "Coder",
+    ['f', "t", "p"],
+    true
+];
+console.log('----ONLY STRINGS----');
+for (let i = 0; i <= orelsoArray.length; i++) {
+    //1 only print the string to the console
+    if(typeof orelsoArray[i] !== 'string') continue;
+    
+    console.log(orelsoArray[i], typeof orelsoArray[1]);
+}
+
 export default Orelso;
