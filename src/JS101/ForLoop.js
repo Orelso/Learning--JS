@@ -8,8 +8,6 @@
 // console.log('lifting weights 8 🏋️')
 // console.log('lifting weights 9 🏋️')
 
-import Orelso from "./Dot-BracketNotation";
-
 //1 for loop keeps running while condition is TRUE (rep <= 10)
 for(let rep = 1; rep <= 10;rep ++ ) {
     console.log(`lifting weights ${rep} 🏋️`)
@@ -68,6 +66,32 @@ for (let ex = 1; ex < 4; ex++) {
         console.log(`Exercise ${ex}: Lifting weight repetition ${rep}🏋️`);
     }
 }
+
+let calcTip = function (bill){
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+let tips = []
+let totals = []
+
+for( let i = 0; i < bills.length; i++){
+    let tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+
+}
+console.log(bills, tips, totals);
+
+let average = function (arr) {
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i]
+    }
+    return sum / arr.length
+}
+console.log(average(totals))
 
 
 export default OrelsoArray;
