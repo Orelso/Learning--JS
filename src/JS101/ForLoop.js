@@ -8,6 +8,8 @@
 // console.log('lifting weights 8 🏋️')
 // console.log('lifting weights 9 🏋️')
 
+import Orelso from "./Dot-BracketNotation";
+
 //1 for loop keeps running while condition is TRUE (rep <= 10)
 for(let rep = 1; rep <= 10;rep ++ ) {
     console.log(`lifting weights ${rep} 🏋️`)
@@ -46,15 +48,26 @@ console.log(ages); //1 [32, 16, 54, 1]
 console.log('----ONLY STRINGS----');
 for (let i = 0; i <= OrelsoArray.length; i++) {
     if(typeof OrelsoArray[i] !== 'string') continue;
-
     console.log(OrelsoArray[i], typeof OrelsoArray[1]);
 }
 
 console.log('----BREAK WITH NUMBER----');
 for (let i = 0; i <= OrelsoArray.length; i++) {
     if(typeof OrelsoArray[i] === 'number') break;
-
     console.log(OrelsoArray[i], typeof OrelsoArray[1]);
 }
+/* -------------------------------------------------------------------------------------------------------------------------------------------------(Looping backwards)------------------------------------------------------------------------------------------------------------------------------------------------------*/
+for(let i = OrelsoArray.length - 1; i >= 0; i--){
+    console.log(i, OrelsoArray[i]);
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------------(Loop inside a loop)------------------------------------------------------------------------------------------------------------------------------------------------------*/
+for (let ex = 1; ex < 4; ex++) {
+    console.log(`----------Starting ex ${ex}-----------`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${ex}: Lifting weight repetition ${rep}🏋️`);
+    }
+}
+
 
 export default OrelsoArray;

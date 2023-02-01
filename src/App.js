@@ -1,10 +1,10 @@
 import './App.css';
-import orelsoArray from './JS101/ForLoop';
+import OrelsoArray from './JS101/ForLoop';
 
 function App() {
   return (
     <div className="App">
-    <orelsoArray />
+    <OrelsoArray />
     </div>
   );
 }
